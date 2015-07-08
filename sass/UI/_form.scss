@@ -1,0 +1,126 @@
+/* FORM
+___________________________________*/
+
+$c-red: #f44e4f;
+$ph-color: #98CFCF;
+
+textarea,
+input {
+	background-color: rgba(255,255,255,.9);
+	border: 1px solid transparent;
+	padding: 10px 11px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width: 100%;
+	&::-webkit-input-placeholder {
+		color: $ph-color;
+		line-height: 1.5;
+	}
+	&::-moz-placeholder {
+		color: $ph-color;
+		line-height: 1.2;
+	}
+	&:-ms-input-placeholder {
+		color: $ph-color;
+		line-height: 1.25;
+	}
+	&:focus {
+		background-color: rgba(255,255,255,1);
+	}
+}
+
+input[type="tel"],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"] {
+	line-height: 1.4;
+	margin-bottom: 20px;
+	&::-ms-clear {
+		display: none;
+	}
+}
+
+input[type=search] {
+	-webkit-appearance: none;
+	&::-webkit-search-cancel-button {
+		-webkit-appearance: none;
+	}
+}
+
+input[type=email]:invalid {
+	border: 1px solid #FF5200;
+	box-shadow: none;
+}
+
+input[type=tel]:invalid {
+	border: 1px solid #FF5200;
+	box-shadow: none;
+}
+
+input[type=search] {
+	-webkit-appearance: none;
+	&::-webkit-search-cancel-button {
+		-webkit-appearance: none;
+	}
+}
+
+textarea {
+	line-height: 1.4;
+	width: 100%;
+	resize: none;
+}
+
+.inp-required {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		width: 5px; height: 5px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		background-color: $c-red;
+		position: absolute;
+		top: 7px; right: 5px;
+	}
+}
+
+.form-msg-success,
+.form-msg-fail {
+	display: inline-block;
+	color: #fff;
+	font-size: 0.9em;
+	padding: 3px 10px;
+	margin-bottom: 1em;
+	border-radius: 3px;
+}
+
+.form-msg-success {
+	background-color: #5dca21;
+}
+
+.form-msg-fail {
+	background-color: #f04043;
+}
+
+
+.has-error {
+	border: 1px solid $c-red;
+}
+
+.has-success {
+	border: 1px solid rgba(255,255,255, 0.7);
+}
+
+button:disabled {
+	background-color: #d8d8d8;
+	&:hover {
+		background-color: #d8d8d8;
+	}
+}

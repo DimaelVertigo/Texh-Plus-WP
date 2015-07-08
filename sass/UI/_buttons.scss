@@ -1,0 +1,66 @@
+/* BUTTONS
+______________________*/
+
+span.btn-green,
+button.btn-green,
+a.btn-green {
+	position: relative;
+	background-color: $c-green;
+	box-shadow: 0 2px 0 adjust-lightness($c-green, -10%);
+	&:hover {
+		background-color: adjust-lightness($c-green, 2%);
+		top: 1px;
+		box-shadow: 0 1px 0 adjust-lightness($c-green, -10%);
+	}
+	&:active {
+		background-color: adjust-lightness($c-green, -2%);
+	}
+}
+
+span.btn-orange,
+button.btn-orange,
+a.btn-orange {
+	position: relative;
+	background-color: $c-orange;
+	box-shadow: 0 2px 0 adjust-lightness($c-orange, -10%);
+	&:hover {
+		background-color: adjust-lightness($c-orange, 2%);
+		top: 1px;
+		box-shadow: 0 1px 0 adjust-lightness($c-orange, -10%);
+	}
+	&:active {
+		background-color: adjust-lightness($c-orange, -2%);
+	}
+}
+
+span.btn {
+	min-width: 140px;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 4px;
+	padding: 0.75em 1.6em;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,.13);
+	font-family: $f-pn-semib, Tahoma, Arial, sans-serif;
+}
+
+button.btn {
+	min-width: 140px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 0.75em 1.6em;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,.13);
+	font-family: $f-pn-semib, Tahoma, Arial, sans-serif;
+}
+
+a.btn {
+	min-width: 140px;
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 0.75em 1.6em;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,.13);
+	font-family: $f-pn-semib, Tahoma, Arial, sans-serif;
+}

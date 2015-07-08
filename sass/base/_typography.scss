@@ -1,0 +1,50 @@
+$select-color: #0EA0E0;
+$c-header: #4a4740;
+$c-fl: #f8981e;
+
+::selection { color: #fff; background: $select-color; }
+::-moz-selection { color: #fff; background: $select-color; }
+::-webkit-selection { color: #fff; background: $select-color; }
+
+// line-height reset
+p, ul, li { line-height: 1.5; }
+
+b, strong, th { font-family: $f-pn-semib, Tahoma, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+	color: $c-header;
+	font-family: $f-pn-bold;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 3.5em;
+	&:first-letter {
+		color: $c-fl;
+	}
+}
+
+h2 {
+	font-size: 3.5em;
+	&:first-letter {
+		color: $c-fl;
+	}
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+	font-size: 1.4em;
+	font-family: $f-pn-semib;
+}
