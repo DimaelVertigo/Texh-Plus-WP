@@ -17,63 +17,97 @@
 
 <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 
 	<div class="main-header">
 		<div class="main-header-top">
 			<div class="container clearfix">
-				<h1 class="main-logo">
-					Tech Plus | Le spécialiste en hyperbarie et fluides médicaux
-					<img src="assets/images/m-logo-2x.png" alt="">
+				<h1 class="main-logo"><?php the_field('main-logo') ?>
+					<img src="<?php bloginfo('template_url') ?>/assets/images/m-logo-2x.png" alt="">
 				</h1>
 				<ul class="main-nav">
-					<li class="level-one"><a href="#company">Société</a></li>
 					<li class="level-one">
-						<a href="#offer-you">Caissons<i class="menu-arr"></i></a>
+						<a href="#company"><?php the_field('main-nav_level-one_link_1') ?></a>
+					</li>
+					<li class="level-one">
+						<a href="#offer-you"><?php the_field('main-nav_level-one_link_2') ?>
+							<i class="menu-arr"></i>
+						</a>
 						<ul class="sub-menu">
-							<li class="level-two"><a href="#hospitals">Hospitaliers</a></li>
-							<li class="level-two"><a href="#army">Armées</a></li>
-							<li class="level-two"><a href="#renting">Location</a></li>
-							<li class="level-two"><a href="#tunnels">Tunnelier</a></li>
-							<li class="level-two"><a href="#cables">Cables</a></li>
-							<li class="level-two"><a href="#animals">Animaux</a></li>
+							<li class="level-two">
+								<a href="#hospitals"><?php the_field('main-nav_sub-menu_link_1') ?></a>
+							</li>
+							<li class="level-two">
+								<a href="#army"><?php the_field('main-nav_sub-menu_link_2') ?></a>
+							</li>
+							<li class="level-two">
+								<a href="#renting"><?php the_field('main-nav_sub-menu_link_3') ?></a>
+							</li>
+							<li class="level-two">
+								<a href="#tunnels"><?php the_field('main-nav_sub-menu_link_4') ?></a>
+							</li>
+							<li class="level-two">
+								<a href="#cables"><?php the_field('main-nav_sub-menu_link_5') ?></a>
+							</li>
+							<li class="level-two">
+								<a href="#animals"><?php the_field('main-nav_sub-menu_link_6') ?></a>
+							</li>
 						</ul>
 					</li>
-					<li class="level-one"><a href="#fluids">Fluides médicaux</a></li>
-					<li class="level-one"><a href="#services">Nos formations</a></li>
+					<li class="level-one">
+						<a href="#fluids"><?php the_field('main-nav_level-one_link_3') ?></a>
+					</li>
+					<li class="level-one">
+						<a href="#services"><?php the_field('main-nav_level-one_link_4') ?></a>
+					</li>
 					<li class="level-one langue-nav">
-						<span class="btn-sub-menu"><i class="lang-fr"></i><i class="menu-arr"></i></span>
+						<span class="btn-sub-menu"> <i class="lang-fr"></i>
+							<i class="menu-arr"></i>
+						</span>
 						<ul class="sub-menu">
-							<li class="level-two"><a href="#"><i class="lang-eng"></i></a></li>
-							<li class="level-two"><a href="#"><i class="lang-de"></i></a></li>
-							<li class="level-two"><a href="#"><i class="lang-it"></i></a></li>
+							<li class="level-two">
+								<a href="#">
+									<i class="lang-eng"></i>
+								</a>
+							</li>
+							<li class="level-two">
+								<a href="#">
+									<i class="lang-de"></i>
+								</a>
+							</li>
+							<li class="level-two">
+								<a href="#">
+									<i class="lang-it"></i>
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li class="level-one contact-us">
-						<a href="#contacts" class="btn btn-green">Contactez Nous</a>
-					</li>
-				</ul>
+						<a href="#contacts" class="btn btn-green"><?php the_field('level-one_contact-us_button') ?></a>
+					</li></ul>
 				<div class="btn-mobile-menu">
 					<i class="btn-ico-mm"></i>
 				</div>
 			</div>
 		</div>
-
 		<div class="main-header-bottom">
 			<div class="container">
 				<div class="mh-slide-1">
-					<h2>Le spécialiste en</h2>
-					<h3>hyperbarie et fluides médicaux</h3>
-					<h4>Fournitures de caissons hyperbares pour</h4>
+					<h2><?php the_field('mh-slide-1-title1') ?></h2>
+					<h3><?php the_field('mh-slide-1-title2') ?></h3>
+					<h4><?php the_field('mh-slide-1-title3') ?></h4>
 					<ul class="slider-list">
-						<li class="prepare-anim">— Centres hospitaliers</li>
-						<li class="prepare-anim">— Armées (nationale et étrangères)</li>
-						<li class="prepare-anim">— Tunneliers</li>
-						<li class="prepare-anim">— Test de cables éléctriques</li>
-						<li class="prepare-anim">— Recherche pétrolière</li>
-						<li class="prepare-anim">— Plongée industrielle</li>
-						<li class="prepare-anim">— Thérapeutiques animales</li>
+						<?php 
+	                        if( have_rows('slider-list') ):
+	                            while ( have_rows('slider-list') ) : the_row();
+	                                ?>
+	                            <li class="prepare-anim"> 
+	                            <?php the_sub_field('slider-list-item'); ?>
+	                            </li>
+	                            <?php endwhile;
+	                        else :
+	                        endif; 
+	                    ?>
 					</ul>
 				</div>
 			</div>
