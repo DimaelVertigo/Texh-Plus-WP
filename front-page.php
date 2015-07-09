@@ -896,43 +896,9 @@ get_header(); ?>
 				<div class="container">
 					<div class="row">
 						<div class="box-6">
-							<form action="" class="contact-form">
-								<div class="row">
-									<div class="inp-blc">
-										<label class="label-input" for="cont-form[1]">Nom de l'entreprise :</label>
-										<span class="inp-required">
-											<input id="cont-form[1]" type="text" placeholder="">
-										</span>
-									</div>
-									<div class="inp-blc">
-										<label class="label-input" for="cont-form[2]">E-Mail :</label>
-										<span class="inp-required">
-											<input id="cont-form[2]" type="email" placeholder="">
-										</span>
-									</div>
-									<div class="inp-blc">
-										<label class="label-input" for="cont-form[3]">Téléphone : </label>
-										<span class="inp-required">
-											<input id="cont-form[3]" type="tel" placeholder="">
-										</span>
-									</div>
-									<div class="inp-blc">
-										<label class="label-input" for="cont-form[4]">Activité : </label>
-										<span class="inp-required">
-											<input id="cont-form[4]" type="text" placeholder="">
-										</span>
-									</div>
-									<div class="inp-blc">
-										<label class="label-input" for="cont-form[5]">Message : </label>
-										<span class="inp-required">
-											<textarea class="cont-form-text" name="" id="cont-form[5]"></textarea>
-										</span>
-									</div>
-								</div>
-								<p class="form-msg-success">Message envoyé avec succès</p>
-								<p class="form-msg-fail">Remplissez les champs “Activité”, “Message”</p>
-								<button class="btn btn-orange" type="submit">Envoyer</button>
-							</form>
+							<div class="contact-form">
+								<?php echo do_shortcode("[contact-form-7 id=6 title=Contact form 1]") ?>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -944,4 +910,5 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+
 <?php get_footer(); ?>

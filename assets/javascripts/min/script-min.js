@@ -1,1 +1,203 @@
-$(document).ready(function(){function e(e){return $($(e).attr("href").replace("#","."))}function n(){$(function(){function e(){function e(e,n,o,t){var a=1<<n;return window.matchMedia("(min-width: 1024px)").matches?new google.maps.LatLng(e.A+t/a,e.F-o/a):window.matchMedia("(max-width: 1024px)").matches?new google.maps.LatLng(e.A,e.F):void 0}o=new google.maps.LatLng(43.146916,5.763518);var t={center:e(o,15,400,130),zoom:15,scrollwheel:!1,mapTypeId:google.maps.MapTypeId.ROADMAP,mapTypeControl:!0,panControl:!0,panControlOptions:{position:google.maps.ControlPosition.RIGHT_CENTER},mapTypeControlOptions:{style:google.maps.MapTypeControlStyle.HORIZONTAL_BAR,position:google.maps.ControlPosition.BOTTOM_CENTER},zoomControl:!0,zoomControlOptions:{style:google.maps.ZoomControlStyle.LARGE,position:google.maps.ControlPosition.RIGHT_CENTER}};n=new google.maps.Map(document.getElementById("map"),t);var a=new google.maps.Marker({position:o,icon:image,animation:google.maps.Animation.DROP}),i=new google.maps.InfoWindow({content:"Centre d'entreprises le Val d'Aran, Bandol (83150) - France"});a.setMap(n),google.maps.event.addListener(a,"click",function(){i.open(n,a)})}var n,o;image=new google.maps.MarkerImage("assets/images/map-point.png",null,null,null,new google.maps.Size(41,73)),document.getElementById("map")&&(google.maps.event.addDomListener(window,"resize",function(){var e=n.getCenter();google.maps.event.trigger(n,"resize"),n.setCenter(e)}),e(),l=!0)})}var o=$("html"),t=o.hasClass("touch"),a=$(".threed-model"),i='<iframe src="http://www.sculpteo.com/fr/embed/design/uq5zeguU?viewer=static&amp;click=none&amp;panel=0" scrolling="auto" width="100%" height="100%" class="sculpteo-viewer"></iframe>',s=$(".section"),l=!1,m=t?0:88,r=$(".slider-list li"),c=$(".btn-mobile-menu");if(a.one("click",function(){$(this).addClass("active-model"),$(i).appendTo(a)}),c.on("click",function(){var e=$(this),n=e.siblings(".main-nav");n.toggleClass("active-mobile-menu")}),!t){var p=$(".main-header-top");mns="main-nav-scrolled",mh=$(".main-header"),hdr=$(".main-header").height()-m,$(window).scroll(function(){$(this).scrollTop()>hdr?(mh.css("padding-top","88px"),p.addClass(mns)):(mh.css("padding-top","0"),p.removeClass(mns))})}setTimeout(function(){$(".main-header").addClass("anim-bg"),r.each(function(e,n){$(n).addClass("anim-item")})},500),s.waypoint({handler:function(e){if($(this.element).hasClass("company")&&!t){var o=$(this.element).find('[class *= "ico-a-"]');o.each(function(e,n){$(n).addClass("anim-item")})}else if($(this.element).hasClass("renting")&&!t){var o=$(this.element).find(".wrap-circle");o.each(function(e,n){$(n).addClass("anim-item")})}else $(this.element).hasClass("contacts")&&!l&&n()},offset:"40%"}),$(".main-nav > li").on({mouseenter:function(){$(this).children(".sub-menu").addClass("active-sub-menu")},mouseleave:function(){$(this).children(".sub-menu").removeClass("active-sub-menu")}}),$(".slider-services").owlCarousel({items:1,autoHeight:!0,nav:!0,navText:!1}),$(".main-nav a").on("click",function(n){n.preventDefault(),$(this).closest(".active-mobile-menu").removeClass("active-mobile-menu"),$("html,body").stop().animate({scrollTop:e(this).offset().top-m})}),$(".gall-picture").each(function(){var e=$(this),n=function(){var n=[];return e.find("a").each(function(){var e=$(this).attr("href"),o=$(this).data("size").split("x"),t=o[0],a=o[1],i={src:e,w:t,h:a};n.push(i)}),n},o=n(),t=$(".pswp")[0];e.on("click","li",function(e){e.preventDefault();var n=$(this).index(),a={index:n,bgOpacity:.7,showHideOpacity:!0},i=new PhotoSwipe(t,PhotoSwipeUI_Default,o,a);i.init()})})});
+$(document).ready(function() {
+
+	var $html = $('html'),
+		$isTouch = $html.hasClass('touch'),
+		threeDModel = $('.threed-model'),
+		iFrame3D = '<iframe src="http://www.sculpteo.com/fr/embed/design/uq5zeguU?viewer=static&amp;click=none&amp;panel=0" scrolling="auto" width="100%" height="100%" class="sculpteo-viewer"></iframe>',
+		section = $('.section'),
+		flagGoogleMap = false,
+		menuOffSet = !$isTouch ? 88 : 0,
+		sliderList = $('.slider-list li'),
+		btnMM = $('.btn-mobile-menu');
+
+	threeDModel.one('click', function() {
+		$(this).addClass('active-model');
+		$(iFrame3D).appendTo(threeDModel);
+	});
+
+	btnMM.on('click', function() {
+		var _this = $(this),
+			btnMenu = _this.siblings('.main-nav');
+		btnMenu.toggleClass('active-mobile-menu');
+	});
+
+	if ( !$isTouch ) {
+		var mn = $(".main-header-top");
+			mns = "main-nav-scrolled";
+			mh = $('.main-header'),
+			hdr = $('.main-header').height() - menuOffSet;
+
+		$(window).scroll(function() {
+			if( $(this).scrollTop() > hdr ) {
+				mh.css('padding-top', '88px');
+				mn.addClass(mns);
+			} else {
+				mh.css('padding-top', '0');
+				mn.removeClass(mns);
+			}
+		});
+
+	}
+
+	setTimeout(function() {
+		$('.main-header').addClass('anim-bg');
+		sliderList.each(function(index, el) {
+			$(el).addClass('anim-item');
+		});
+	}, 500);
+
+	section.waypoint({
+		handler: function(direction) {
+			if ( $(this.element).hasClass('company') && !$isTouch ) {
+				var $elems = $(this.element).find('[class *= "ico-a-"]');
+				$elems.each(function(index, el) {
+					$(el).addClass('anim-item');
+				});
+			} else if ( $(this.element).hasClass('renting') && !$isTouch ) {
+				var $elems = $(this.element).find('.wrap-circle');
+				$elems.each(function(index, el) {
+					$(el).addClass('anim-item');
+				});
+			} else if ( $(this.element).hasClass('contacts') && !flagGoogleMap ) {
+				helloGoogleMap();
+			}
+		},
+		offset: '40%'
+	});
+
+	$('.main-nav > li').on({
+		mouseenter: function() {
+			$(this).children('.sub-menu').addClass('active-sub-menu');
+		},
+		mouseleave: function() {
+			$(this).children('.sub-menu').removeClass('active-sub-menu');
+		}
+	});
+
+	$('.slider-services').owlCarousel({
+		items: 1,
+		autoHeight : true,
+		nav: true,
+		navText: false
+	});
+
+	function getRelatedContent(el){
+		return $($(el).attr('href').replace('#', '.'));
+	}
+
+	$('.main-nav a:not(.langue-nav a)').on('click',function(e){
+		e.preventDefault();
+		$(this).closest('.active-mobile-menu').removeClass('active-mobile-menu');
+		$('html,body').stop().animate({scrollTop: getRelatedContent(this).offset().top - menuOffSet});
+	});
+
+	// $('.js-open-threed-model').magnificPopup({
+	// 	type: 'ajax'
+	// });
+	
+	$('.gall-picture').each( function() {
+		var $pic     = $(this),
+			getItems = function() {
+				var items = [];
+				$pic.find('a').each(function() {
+					var $href   = $(this).attr('href'),
+						$size   = $(this).data('size').split('x'),
+						$width  = $size[0],
+						$height = $size[1];
+	 
+					var item = {
+						src : $href,
+						w   : $width,
+						h   : $height
+					}
+	 
+					items.push(item);
+				});
+				return items;
+			}
+	 
+		var items = getItems();
+
+		var $pswp = $('.pswp')[0];
+		$pic.on('click', 'li', function(e) {
+			e.preventDefault();
+			 
+			var $index = $(this).index();
+			var options = {
+				index: $index,
+				bgOpacity: 0.7,
+				showHideOpacity: true
+			}
+			 
+			// Initialize PhotoSwipe
+			var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+			lightBox.init();
+		});
+	});
+
+	function helloGoogleMap() {
+		$(function() {
+			var map, myLatLng;
+				image = new google.maps.MarkerImage("assets/images/map-point.png", null, null, null, new google.maps.Size(41,73));
+
+			function initMap() {
+				myLatLng = new google.maps.LatLng(43.146916, 5.763518);
+				var mapOptions = {
+				  center: latLngOffSet(myLatLng, 15, 400, 130),
+				  zoom: 15,
+				  scrollwheel: false,
+				  mapTypeId: google.maps.MapTypeId.ROADMAP,
+				  mapTypeControl: true,
+				  panControl: true,
+				  panControlOptions: {
+				  	position: google.maps.ControlPosition.RIGHT_CENTER
+				  },
+				  mapTypeControlOptions: {
+				      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+				      position: google.maps.ControlPosition.BOTTOM_CENTER
+				  },
+				  zoomControl: true,
+				  zoomControlOptions: {
+				      style: google.maps.ZoomControlStyle.LARGE,
+				      position: google.maps.ControlPosition.RIGHT_CENTER
+				  }
+				};
+				map = new google.maps.Map(document.getElementById('map'), mapOptions);
+				var marker = new google.maps.Marker({
+				  position: myLatLng,
+				  icon: image,
+				  animation: google.maps.Animation.DROP
+				});
+				
+				var infowindow = new google.maps.InfoWindow({
+				  content: "Centre d'entreprises le Val d'Aran, Bandol (83150) - France"
+				});
+				marker.setMap(map);
+				//infowindow.open(map, marker);
+				google.maps.event.addListener(marker, 'click', (function() {
+				  infowindow.open(map, marker);
+				}));
+				function latLngOffSet(lat, zoom, x, y){
+					var scale =  1 << zoom;
+					if (window.matchMedia("(min-width: 1024px)").matches) {
+						return new google.maps.LatLng(lat.A + y / scale, lat.F - x / scale);
+					} else if (window.matchMedia("(max-width: 1024px)").matches) {
+						return new google.maps.LatLng(lat.A, lat.F);
+					}
+				}
+			}
+			if (document.getElementById('map')) {
+				//google.maps.event.addDomListener(window, 'load', initMap);
+				google.maps.event.addDomListener(window, 'resize', function() {
+				  var center = map.getCenter();
+				  google.maps.event.trigger(map, 'resize');
+				  map.setCenter(center);
+				});
+				initMap();
+				flagGoogleMap = true;
+			}
+		});
+	}
+
+});
+

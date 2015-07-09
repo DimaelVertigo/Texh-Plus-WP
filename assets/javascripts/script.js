@@ -85,7 +85,7 @@ $(document).ready(function() {
 		return $($(el).attr('href').replace('#', '.'));
 	}
 
-	$('.main-nav a').on('click',function(e){
+	$('.main-nav a:not(.langue-nav a)').on('click',function(e){
 		e.preventDefault();
 		$(this).closest('.active-mobile-menu').removeClass('active-mobile-menu');
 		$('html,body').stop().animate({scrollTop: getRelatedContent(this).offset().top - menuOffSet});

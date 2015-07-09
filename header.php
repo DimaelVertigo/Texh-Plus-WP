@@ -66,22 +66,33 @@
 						</span>
 						<ul class="sub-menu">
 							<li class="level-two">
-								<a href="#">
+								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=en">
 									<i class="lang-eng"></i>
 								</a>
 							</li>
 							<li class="level-two">
-								<a href="#">
+								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=de">
 									<i class="lang-de"></i>
 								</a>
 							</li>
 							<li class="level-two">
-								<a href="#">
+								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=it">
 									<i class="lang-it"></i>
+								</a>
+							</li>
+							<li class="level-two">
+								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=es">
+									<i class="lang-es"></i>
+								</a>
+							</li>
+							<li class="level-two">
+								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=fr">
+									<i class="lang-fr"></i>
 								</a>
 							</li>
 						</ul>
 					</li>
+
 					<li class="level-one contact-us">
 						<a href="#contacts" class="btn btn-green"><?php the_field('level-one_contact-us_button') ?></a>
 					</li></ul>
