@@ -633,8 +633,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/jquery-2.1.1.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/javascripts\/jquery.magnific-popup.min.js": {
 		"fileType": 64,
@@ -644,8 +644,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/jquery.magnific-popup.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/javascripts\/jquery.placeholder.js": {
 		"fileType": 64,
@@ -655,8 +655,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/jquery.placeholder-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/javascripts\/jquery.waypoints.js": {
 		"fileType": 64,
@@ -664,6 +664,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/javascripts\/jquery.waypoints.js",
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/jquery.waypoints-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/assets\/javascripts\/min\/script-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/min\/script-min.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/min\/script-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -677,8 +688,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/modernizr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/javascripts\/owl.carousel.min.js": {
 		"fileType": 64,
@@ -688,8 +699,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/owl.carousel.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/javascripts\/photoswipe-ui-default.min.js": {
 		"fileType": 64,
@@ -699,8 +710,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/photoswipe-ui-default.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/javascripts\/photoswipe.min.js": {
 		"fileType": 64,
@@ -710,8 +721,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/photoswipe.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/javascripts\/script.js": {
 		"fileType": 64,
@@ -721,8 +732,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/script-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/javascripts\/scripts-min.js": {
 		"fileType": 64,
@@ -732,8 +743,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/scripts-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/javascripts\/scripts.js": {
 		"fileType": 64,
@@ -743,8 +754,8 @@
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/scripts-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/stylesheets\/css\/style.css": {
 		"fileType": 16,
@@ -764,11 +775,65 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/config.rb": {
+		"fileType": 131072,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/config.rb",
+		"outputAbbreviatedPath": "\/config.rb",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/ie.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/ie.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/print.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/print.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/screen.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/screen.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/footer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/front-page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/front-page.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -928,7 +993,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_mixins.scss",
-		"outputAbbreviatedPath": "\/css\/_mixins.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -944,7 +1009,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_mp-main.scss",
-		"outputAbbreviatedPath": "\/css\/_mp-main.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_mp-main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -960,7 +1025,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_mp-settings.scss",
-		"outputAbbreviatedPath": "\/css\/_mp-settings.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_mp-settings.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -976,7 +1041,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_owl.carousel.scss",
-		"outputAbbreviatedPath": "\/css\/_owl.carousel.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_owl.carousel.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -992,7 +1057,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_retina-sprites.scss",
-		"outputAbbreviatedPath": "\/css\/_retina-sprites.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_retina-sprites.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1008,7 +1073,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/base\/_index.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_index.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_index.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1024,7 +1089,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/base\/_reset.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_reset.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_reset.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1040,7 +1105,23 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/base\/_typography.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_typography.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_typography.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/ie.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/ie.scss",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/ie.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1056,7 +1137,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/photoswipe\/_default-skin.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_default-skin.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_default-skin.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1072,7 +1153,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/photoswipe\/_main-settings.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_main-settings.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_main-settings.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1088,7 +1169,39 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/photoswipe\/_main.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_main.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_main.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/print.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/print.scss",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/print.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/screen.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/screen.scss",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/screen.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1120,7 +1233,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/UI\/_buttons.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_buttons.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_buttons.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1136,7 +1249,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/UI\/_form.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_form.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_form.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1152,7 +1265,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/UI\/_index.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_index.css",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/_index.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1580,7 +1693,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "tech-plus",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_gray"
 	},
 "projectSettings": {

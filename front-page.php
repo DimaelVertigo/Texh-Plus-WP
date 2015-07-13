@@ -12,6 +12,7 @@
  */
 
 get_header(); ?>
+
 	<div class="sections">
 		<div class="section company">
 			<div class="container">

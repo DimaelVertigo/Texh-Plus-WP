@@ -1,3 +1,7 @@
+.qtranslate-2 {
+  position: relative;
+  z-index: 2000; }
+
 .ha {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -267,18 +271,21 @@ a.btn-green {
   a.btn-green:active {
     background-color: #68b331; }
 
+input.btn-orange,
 span.btn-orange,
 button.btn-orange,
 a.btn-orange {
   position: relative;
   background-color: #f8981e;
   box-shadow: 0 2px 0 #dc7e07; }
+  input.btn-orange:hover,
   span.btn-orange:hover,
   button.btn-orange:hover,
   a.btn-orange:hover {
     background-color: #f89d28;
     top: 1px;
     box-shadow: 0 1px 0 #dc7e07; }
+  input.btn-orange:active,
   span.btn-orange:active,
   button.btn-orange:active,
   a.btn-orange:active {
@@ -294,6 +301,7 @@ span.btn {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
   font-family: "ProximaNova Semibol", Tahoma, Arial, sans-serif; }
 
+input.btn,
 button.btn {
   min-width: 140px;
   border: none;
@@ -1847,12 +1855,12 @@ a.pswp__share--download:hover {
       display: block;
       height: 26px;
       width: 34px;
-      background-image: url('../../images/image-sf39eeb1f73.png');
+      background-image: url('../../images/image-s1336c8578c.png');
       background-position: 0 0;
       background-repeat: no-repeat; } }
     @media (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 1024px) and (min--moz-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 320px) and (max-width: 1024px) and (min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 1024px) and (min-resolution: 144dpi) {
       .btn-mobile-menu .btn-ico-mm {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
         background-position: 0 0;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
@@ -1939,13 +1947,13 @@ a.pswp__share--download:hover {
         display: inline-block;
         height: 8px;
         width: 13px;
-        background-image: url('../../images/image-sf39eeb1f73.png');
-        background-position: 0 -803px;
+        background-image: url('../../images/image-s1336c8578c.png');
+        background-position: 0 -821px;
         background-repeat: no-repeat; } }
       @media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1025px) and (min--moz-device-pixel-ratio: 1.5), (min-width: 1025px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1025px) and (min-device-pixel-ratio: 1.5), (min-width: 1025px) and (min-resolution: 144dpi) {
         .main-nav .level-one .menu-arr {
-          background-image: url('../../images/image-retina-se7e2f196c6.png');
-          background-position: 0 -802px;
+          background-image: url('../../images/image-retina-s57bbc0ca60.png');
+          background-position: 0 -820px;
           -moz-background-size: 68px auto;
           -o-background-size: 68px auto;
           -webkit-background-size: 68px auto;
@@ -2011,26 +2019,26 @@ a.pswp__share--download:hover {
 .langue-nav .lang-fr {
   height: 18px;
   width: 30px;
-  background-image: url('../../images/image-sf39eeb1f73.png');
+  background-image: url('../../images/image-s1336c8578c.png');
   background-position: 0 -92px;
   background-repeat: no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
     .langue-nav .lang-fr {
-      background-image: url('../../images/image-retina-se7e2f196c6.png');
+      background-image: url('../../images/image-retina-s57bbc0ca60.png');
       background-position: 0 -92px;
       -moz-background-size: 68px auto;
       -o-background-size: 68px auto;
       -webkit-background-size: 68px auto;
       background-size: 68px auto; } }
-.langue-nav .lang-eng {
+.langue-nav .lang-en {
   height: 18px;
   width: 30px;
-  background-image: url('../../images/image-sf39eeb1f73.png');
+  background-image: url('../../images/image-s1336c8578c.png');
   background-position: 0 -74px;
   background-repeat: no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .langue-nav .lang-eng {
-      background-image: url('../../images/image-retina-se7e2f196c6.png');
+    .langue-nav .lang-en {
+      background-image: url('../../images/image-retina-s57bbc0ca60.png');
       background-position: 0 -74px;
       -moz-background-size: 68px auto;
       -o-background-size: 68px auto;
@@ -2039,12 +2047,12 @@ a.pswp__share--download:hover {
 .langue-nav .lang-de {
   height: 18px;
   width: 30px;
-  background-image: url('../../images/image-sf39eeb1f73.png');
+  background-image: url('../../images/image-s1336c8578c.png');
   background-position: 0 -56px;
   background-repeat: no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
     .langue-nav .lang-de {
-      background-image: url('../../images/image-retina-se7e2f196c6.png');
+      background-image: url('../../images/image-retina-s57bbc0ca60.png');
       background-position: 0 -56px;
       -moz-background-size: 68px auto;
       -o-background-size: 68px auto;
@@ -2053,13 +2061,27 @@ a.pswp__share--download:hover {
 .langue-nav .lang-it {
   height: 18px;
   width: 30px;
-  background-image: url('../../images/image-sf39eeb1f73.png');
+  background-image: url('../../images/image-s1336c8578c.png');
   background-position: 0 -110px;
   background-repeat: no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
     .langue-nav .lang-it {
-      background-image: url('../../images/image-retina-se7e2f196c6.png');
+      background-image: url('../../images/image-retina-s57bbc0ca60.png');
       background-position: 0 -110px;
+      -moz-background-size: 68px auto;
+      -o-background-size: 68px auto;
+      -webkit-background-size: 68px auto;
+      background-size: 68px auto; } }
+.langue-nav .lang-es {
+  height: 18px;
+  width: 30px;
+  background-image: url('../../images/image-s1336c8578c.png');
+  background-position: 0 -128px;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .langue-nav .lang-es {
+      background-image: url('../../images/image-retina-s57bbc0ca60.png');
+      background-position: 0 -128px;
       -moz-background-size: 68px auto;
       -o-background-size: 68px auto;
       -webkit-background-size: 68px auto;
@@ -2327,13 +2349,13 @@ a.pswp__share--download:hover {
     top: 50%;
     height: 38px;
     width: 38px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -128px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -146px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .fsg-item:before {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -128px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -146px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2391,13 +2413,13 @@ a.pswp__share--download:hover {
   .icon-activity .ico-a-1 {
     height: 57px;
     width: 64px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -166px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -184px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icon-activity .ico-a-1 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -166px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -184px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2407,13 +2429,13 @@ a.pswp__share--download:hover {
   .icon-activity .ico-a-2 {
     height: 60px;
     width: 64px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -223px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -241px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icon-activity .ico-a-2 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -223px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -241px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2423,13 +2445,13 @@ a.pswp__share--download:hover {
   .icon-activity .ico-a-3 {
     height: 64px;
     width: 58px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -283px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -301px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icon-activity .ico-a-3 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -283px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -301px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2439,13 +2461,13 @@ a.pswp__share--download:hover {
   .icon-activity .ico-a-4 {
     height: 57px;
     width: 64px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -347px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -365px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icon-activity .ico-a-4 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -347px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -365px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2455,13 +2477,13 @@ a.pswp__share--download:hover {
   .icon-activity .ico-a-5 {
     height: 51px;
     width: 68px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -404px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -422px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icon-activity .ico-a-5 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -404px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -422px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2471,13 +2493,13 @@ a.pswp__share--download:hover {
   .icon-activity .ico-a-6 {
     height: 64px;
     width: 57px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -455px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -473px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icon-activity .ico-a-6 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -455px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -473px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2487,13 +2509,13 @@ a.pswp__share--download:hover {
   .icon-activity .ico-a-7 {
     height: 54px;
     width: 45px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -519px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -537px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icon-activity .ico-a-7 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -519px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -537px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2583,13 +2605,13 @@ a.pswp__share--download:hover {
     display: inline-block;
     height: 104px;
     width: 62px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -811px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -829px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .threed-zone .three-d-info .ico-mouse {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -810px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -828px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2722,13 +2744,13 @@ a.pswp__share--download:hover {
   .icons-renting-header .irh-1 {
     height: 42px;
     width: 42px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -573px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -591px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icons-renting-header .irh-1 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -573px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -591px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2736,13 +2758,13 @@ a.pswp__share--download:hover {
   .icons-renting-header .irh-2 {
     height: 15px;
     width: 39px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -615px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -633px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icons-renting-header .irh-2 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -615px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -633px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2750,13 +2772,13 @@ a.pswp__share--download:hover {
   .icons-renting-header .irh-3 {
     height: 43px;
     width: 22px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -630px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -648px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icons-renting-header .irh-3 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -629px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -647px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2764,13 +2786,13 @@ a.pswp__share--download:hover {
   .icons-renting-header .irh-4 {
     height: 42px;
     width: 42px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -673px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -691px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icons-renting-header .irh-4 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -672px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -690px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2778,13 +2800,13 @@ a.pswp__share--download:hover {
   .icons-renting-header .irh-5 {
     height: 46px;
     width: 25px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -715px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -733px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icons-renting-header .irh-5 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -714px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -732px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2792,13 +2814,13 @@ a.pswp__share--download:hover {
   .icons-renting-header .irh-6 {
     height: 42px;
     width: 30px;
-    background-image: url('../../images/image-sf39eeb1f73.png');
-    background-position: 0 -761px;
+    background-image: url('../../images/image-s1336c8578c.png');
+    background-position: 0 -779px;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .icons-renting-header .irh-6 {
-        background-image: url('../../images/image-retina-se7e2f196c6.png');
-        background-position: 0 -760px;
+        background-image: url('../../images/image-retina-s57bbc0ca60.png');
+        background-position: 0 -778px;
         -moz-background-size: 68px auto;
         -o-background-size: 68px auto;
         -webkit-background-size: 68px auto;
@@ -2853,7 +2875,7 @@ a.pswp__share--download:hover {
       height: 23px;
       height: 15px;
       width: 9px;
-      background-image: url('../../images/image-sf39eeb1f73.png');
+      background-image: url('../../images/image-s1336c8578c.png');
       background-position: 0 -41px;
       background-repeat: no-repeat;
       position: absolute;
@@ -2862,7 +2884,7 @@ a.pswp__share--download:hover {
       margin-top: -7px; }
       @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
         .slider-services .owl-prev:before {
-          background-image: url('../../images/image-retina-se7e2f196c6.png');
+          background-image: url('../../images/image-retina-s57bbc0ca60.png');
           background-position: 0 -41px;
           -moz-background-size: 68px auto;
           -o-background-size: 68px auto;
@@ -2885,7 +2907,7 @@ a.pswp__share--download:hover {
       height: 23px;
       height: 15px;
       width: 9px;
-      background-image: url('../../images/image-sf39eeb1f73.png');
+      background-image: url('../../images/image-s1336c8578c.png');
       background-position: 0 -26px;
       background-repeat: no-repeat;
       position: absolute;
@@ -2894,7 +2916,7 @@ a.pswp__share--download:hover {
       margin-top: -7px; }
       @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
         .slider-services .owl-next:before {
-          background-image: url('../../images/image-retina-se7e2f196c6.png');
+          background-image: url('../../images/image-retina-s57bbc0ca60.png');
           background-position: 0 -26px;
           -moz-background-size: 68px auto;
           -o-background-size: 68px auto;
