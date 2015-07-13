@@ -35,6 +35,7 @@ $(document).ready(function() {
 				mh.css('padding-top', '0');
 				mn.removeClass(mns);
 			}
+
 		});
 
 	}

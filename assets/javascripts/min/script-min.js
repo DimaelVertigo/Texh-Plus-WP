@@ -35,6 +35,7 @@ $(document).ready(function() {
 				mh.css('padding-top', '0');
 				mn.removeClass(mns);
 			}
+
 		});
 
 	}
@@ -138,7 +139,7 @@ $(document).ready(function() {
 	function helloGoogleMap() {
 		$(function() {
 			var map, myLatLng;
-				image = new google.maps.MarkerImage("assets/images/map-point.png", null, null, null, new google.maps.Size(41,73));
+				image = new google.maps.MarkerImage("/wp-content/themes/tech-plus/assets/images/map-point.png", null, null, null, new google.maps.Size(41,73));
 
 			function initMap() {
 				myLatLng = new google.maps.LatLng(43.146916, 5.763518);
@@ -198,6 +199,22 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	function changeLang() {
+		var langNav = $('.langue-nav'),
+			selectedLang = langNav.find('#icon-lang');
+			listLang = langNav.children('.sub-menu').find('[class *= "lang-"]');
+			lang = document.location.href.match(/\?(lang=..)/)[1].replace('=', '-');
+
+		selectedLang.addClass(lang);
+		listLang.each(function(index, el) {
+			if ($(this).hasClass(lang)) {
+				$(this).closest('.level-two').remove();
+			}
+		});
+	}
+
+	changeLang();
 
 });
 

@@ -12,6 +12,12 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Tech-plus.fr">
+<meta name="Indentifier-URL" content="http://tech-plus.fr">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0 user-scalable=yes">
+<title>Tech Plus | Le spécialiste en hyperbarie et fluides médicaux</title>
+<link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url') ?>/favicon.ico">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -58,7 +64,7 @@
 						<a href="#fluids"><?php the_field('main-nav_level-one_link_3') ?></a>
 					</li>
 					<li class="level-one">
-						<a href="#services"><?php the_field('main-nav_level-one_link_4') ?></a>
+						<a href="#training"><?php the_field('main-nav_level-one_link_4') ?></a>
 					</li>
 					<li class="level-one langue-nav">
 						<span class="btn-sub-menu">

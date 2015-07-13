@@ -117,7 +117,6 @@ body {
 .placeholder {
 	line-height: 1.2;
 }
-
 //////////////////////////////////////////
 //                                      //
 //               HEADER                 //
@@ -372,7 +371,7 @@ body {
 	.lang-fr {
 		@include retina-sprite(flag-fr);
 	}
-	.lang-eng {
+	.lang-en {
 		@include retina-sprite(flag-eng);
 	}
 	.lang-de {
@@ -380,6 +379,9 @@ body {
 	}
 	.lang-it {
 		@include retina-sprite(flag-it);
+	}
+	.lang-es {
+		@include retina-sprite(flag-sp);
 	}
 	.sub-menu {
 		min-width: 0;
