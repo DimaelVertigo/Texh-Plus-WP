@@ -3,8 +3,7 @@ ______________________*/
 
 span.btn-green,
 button.btn-green,
-a.btn-green,
-input[type="submit"].btn {
+a.btn-green {
 	position: relative;
 	background-color: $c-green;
 	box-shadow: 0 2px 0 adjust-lightness($c-green, -10%);
@@ -20,8 +19,7 @@ input[type="submit"].btn {
 
 span.btn-orange,
 button.btn-orange,
-a.btn-orange,
-input[type="submit"].btn-orange {
+a.btn-orange {
 	position: relative;
 	background-color: $c-orange;
 	box-shadow: 0 2px 0 adjust-lightness($c-orange, -10%);
@@ -46,8 +44,7 @@ span.btn {
 	font-family: $f-pn-semib, Tahoma, Arial, sans-serif;
 }
 
-button.btn,
-input[type="submit"].btn {
+button.btn {
 	min-width: 140px;
 	border: none;
 	cursor: pointer;
@@ -57,10 +54,7 @@ input[type="submit"].btn {
 	text-shadow: 0 1px 1px rgba(0,0,0,.13);
 	font-family: $f-pn-semib, Tahoma, Arial, sans-serif;
 }
-input[type="submit"].btn {
-	color: #fff;
-	width: 170px;
-}
+
 a.btn {
 	min-width: 140px;
 	cursor: pointer;

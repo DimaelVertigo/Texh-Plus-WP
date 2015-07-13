@@ -12,7 +12,6 @@
  */
 
 get_header(); ?>
-<b>d</b>
 	<div class="sections">
 		<div class="section company">
 			<div class="container">

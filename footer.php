@@ -11,8 +11,7 @@
 
 	<div class="footer">
 		<div class="container">
-			<p class="footer-desc"><?php the_field('footer-description') ?>
-			<a href="http://heartbeat.ua" target="_blank"><?php the_field('hb-link-text') ?></a></p>
+			<p class="footer-desc">Copyright &#169; 2015 <strong>Tech-Plus.fr</strong> - Agence <a href="http://heartbeat.ua" target="_blank">heartbeat.ua</a></p>
 		</div>
 	</div>
 
