@@ -1219,7 +1219,7 @@
 		"inputAbbreviatedPath": "\/sass\/style.scss",
 		"outputAbbreviatedPath": "\/assets\/stylesheets\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
