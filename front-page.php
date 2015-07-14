@@ -770,7 +770,7 @@ get_header(); ?>
 		</div>
 
 		<div class="section training no-gallery-section">
-			<div class="container">
+			<div class="container container-training">
 				<div class="h2-header">
 					<div class="left-side">
 						<h2><?php the_field('training-title') ?></h2>
@@ -791,7 +791,7 @@ get_header(); ?>
 						<p><?php the_field('training-simple-paragraph4') ?></p>
 					</div>
 					<div class="m-box-6">
-
+						<img src="<?php the_field('training') ?>" alt="">
 					</div>
 				</div>
 			</div>

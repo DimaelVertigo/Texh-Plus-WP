@@ -350,9 +350,6 @@ input {
   input:-ms-input-placeholder {
     color: #98CFCF;
     line-height: 1.25; }
-  textarea:focus,
-  input:focus {
-    background-color: white; }
 
 input[type="tel"],
 input[type="text"],
@@ -1674,6 +1671,8 @@ a.pswp__share--download:hover {
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+  .container-training {
+    overflow: hidden; }
 
 .row:after {
   display: table;
@@ -1807,7 +1806,7 @@ a.pswp__share--download:hover {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   background-color: rgba(46, 43, 38, 0.8);
   -webkit-transition: background .4s;
           transition: background .4s; }
@@ -3049,6 +3048,8 @@ a.pswp__share--download:hover {
     background-color: #f8981e; }
   .contact-form .wpcf7-mail-sent-ok {
     background-color: #6dbb33; }
+  .contact-form input:not(.btn):focus, .contact-form textarea:focus {
+    background-color: white; }
 
 .footer {
   font-size: 0.9em;
