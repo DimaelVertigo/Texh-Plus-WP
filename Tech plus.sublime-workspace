@@ -27,7 +27,7 @@
 			"file": "front-page.php",
 			"settings":
 			{
-				"buffer_size": 34118,
+				"buffer_size": 28150,
 				"line_ending": "Unix"
 			}
 		}
@@ -265,15 +265,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 34118,
+						"buffer_size": 28150,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1475,
-								1475
+								25248,
+								25248
 							]
 						],
 						"settings":
@@ -289,7 +289,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 395.0,
+						"translation.y": 14317.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -513,7 +513,7 @@
 		[
 			[
 				"",
-				"/Applications/MAMP/htdocs/wordpress.local/Vost/wp-content/themes/vost/Vost.sublime-project"
+				"/Applications/MAMP/htdocs/wordpress.local/Ent/wp-content/themes/ENT-Sinus-Center-WP/Ent.sublime-project"
 			]
 		],
 		"width": 380.0

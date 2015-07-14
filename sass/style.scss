@@ -87,9 +87,6 @@ body {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	&-training {
-		overflow: hidden;
-	}
 }
 
 .row:after {
@@ -158,7 +155,7 @@ body {
 
 .main-header-top {
 	position: relative;
-	background-color: rgba(253,236,213,.15);
+	background-color: rgba(74, 71, 64, 0.9);
 }
 
 .main-nav-scrolled {
@@ -273,8 +270,8 @@ body {
 
 @media (min-width: 1025px) {
 	.main-logo {
-		margin: 9px 0 0 0;
-		width: 100px;
+		margin: 6px 0 0 0;
+		width: 110px;
 	}
 	.main-nav {
 		margin: 2em 0;
@@ -374,7 +371,7 @@ body {
 	.lang-fr {
 		@include retina-sprite(flag-fr);
 	}
-	.lang-en {
+	.lang-eng {
 		@include retina-sprite(flag-eng);
 	}
 	.lang-de {
@@ -382,9 +379,6 @@ body {
 	}
 	.lang-it {
 		@include retina-sprite(flag-it);
-	}
-	.lang-es {
-		@include retina-sprite(flag-sp);
 	}
 	.sub-menu {
 		min-width: 0;
@@ -695,7 +689,7 @@ body {
 }
 
 .full-size-gallery {
-	margin: 0 auto;
+	margin: 0 auto 2px;
 	.fsg-item {
 		float: left;
 		background-color: #4a4740;
@@ -946,6 +940,8 @@ body {
 			background-image: url(../../images/3d-model-text.png);
 			background-repeat: no-repeat;
 			background-position: center bottom;
+			background-size: 100% auto;
+			
 			&:before {
 				transition: opacity .4s;
 				content: '';
@@ -1403,44 +1399,6 @@ body {
 	.btn {
 		display: block;
 	}
-	.captcha-img {
-		margin: -10px 0 5px;
-		float: right;
-		position: relative;
-		top: 39px;
-		z-index: 2;
-		right: 18px;
-	}
-	.wpcf7-not-valid-tip {
-		font-size: .9em;
-		margin: -5px 0 10px;
-		color: #fff;
-		border: 2px dashed $c-red;
-		-webkit-animation-duration: 1s; 
-		animation-duration: 1s; 
-		-webkit-animation-fill-mode: both; 
-		animation-fill-mode: both;
-		-webkit-animation-name: tada; 
-		animation-name: tada; 
-		text-align: center;
-		text-shadow: 1px 1px 0 #0A0A0A;
-	}
-	.wpcf7-response-output {
-		color: #fff;
-		text-align: center;
-		border: none;
-	}
-	.wpcf7-validation-errors {
-		background-color: $c-orange;
-	}
-	.wpcf7-mail-sent-ok {
-		background-color: $c-green;
-	}
-	input:not(.btn), textarea {
-		&:focus {
-			background-color: rgba(255,255,255,1);
-		}
-	}
 }
 
 
@@ -1463,6 +1421,10 @@ body {
 		}
 	}
 }
+
+
+
+
 
 
 

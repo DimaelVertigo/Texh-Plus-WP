@@ -1671,8 +1671,6 @@ a.pswp__share--download:hover {
 .container {
   max-width: 1200px;
   margin: 0 auto; }
-  .container-training {
-    overflow: hidden; }
 
 .row:after {
   display: table;
@@ -1800,7 +1798,7 @@ a.pswp__share--download:hover {
 
 .main-header-top {
   position: relative;
-  background-color: rgba(253, 236, 213, 0.15); }
+  background-color: rgba(74, 71, 64, 0.9); }
 
 .main-nav-scrolled {
   position: fixed;
@@ -1908,8 +1906,8 @@ a.pswp__share--download:hover {
     padding: 3em 0; } }
 @media (min-width: 1025px) {
   .main-logo {
-    margin: 9px 0 0 0;
-    width: 100px; }
+    margin: 6px 0 0 0;
+    width: 110px; }
 
   .main-nav {
     margin: 2em 0;
@@ -2014,14 +2012,14 @@ a.pswp__share--download:hover {
       background-image: url('../../images/image-retina-s57bbc0ca60.png');
       background-position: 0 -92px;
       background-size: 68px auto; } }
-.langue-nav .lang-en {
+.langue-nav .lang-eng {
   height: 18px;
   width: 30px;
   background-image: url('../../images/image-s1336c8578c.png');
   background-position: 0 -74px;
   background-repeat: no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .langue-nav .lang-en {
+    .langue-nav .lang-eng {
       background-image: url('../../images/image-retina-s57bbc0ca60.png');
       background-position: 0 -74px;
       background-size: 68px auto; } }
@@ -2046,17 +2044,6 @@ a.pswp__share--download:hover {
     .langue-nav .lang-it {
       background-image: url('../../images/image-retina-s57bbc0ca60.png');
       background-position: 0 -110px;
-      background-size: 68px auto; } }
-.langue-nav .lang-es {
-  height: 18px;
-  width: 30px;
-  background-image: url('../../images/image-s1336c8578c.png');
-  background-position: 0 -128px;
-  background-repeat: no-repeat; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .langue-nav .lang-es {
-      background-image: url('../../images/image-retina-s57bbc0ca60.png');
-      background-position: 0 -128px;
       background-size: 68px auto; } }
 .langue-nav .sub-menu {
   min-width: 0; }
@@ -2281,7 +2268,7 @@ a.pswp__share--download:hover {
     .full-size-gallery .fsg-item {
       width: 25%; } }
 .full-size-gallery {
-  margin: 0 auto; }
+  margin: 0 auto 2px; }
   .full-size-gallery .fsg-item {
     float: left;
     background-color: #4a4740; }
@@ -2561,7 +2548,8 @@ a.pswp__share--download:hover {
   .no-touch .threed-zone .threed-model {
     background-image: url(../../images/3d-model-text.png);
     background-repeat: no-repeat;
-    background-position: center bottom; }
+    background-position: center bottom;
+    background-size: 100% auto; }
     .no-touch .threed-zone .threed-model:before {
       -webkit-transition: opacity .4s;
               transition: opacity .4s;
@@ -3020,36 +3008,6 @@ a.pswp__share--download:hover {
     margin-bottom: 20px; }
   .contact-form .btn {
     display: block; }
-  .contact-form .captcha-img {
-    margin: -10px 0 5px;
-    float: right;
-    position: relative;
-    top: 39px;
-    z-index: 2;
-    right: 18px; }
-  .contact-form .wpcf7-not-valid-tip {
-    font-size: .9em;
-    margin: -5px 0 10px;
-    color: #fff;
-    border: 2px dashed #f44e4f;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: tada;
-    animation-name: tada;
-    text-align: center;
-    text-shadow: 1px 1px 0 #0A0A0A; }
-  .contact-form .wpcf7-response-output {
-    color: #fff;
-    text-align: center;
-    border: none; }
-  .contact-form .wpcf7-validation-errors {
-    background-color: #f8981e; }
-  .contact-form .wpcf7-mail-sent-ok {
-    background-color: #6dbb33; }
-  .contact-form input:not(.btn):focus, .contact-form textarea:focus {
-    background-color: white; }
 
 .footer {
   font-size: 0.9em;
