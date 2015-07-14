@@ -1400,6 +1400,39 @@ body {
 	.btn {
 		display: block;
 	}
+	.captcha-img {
+		margin: -10px 0 5px;
+		float: right;
+		position: relative;
+		top: 39px;
+		z-index: 2;
+		right: 18px;
+	}
+	.wpcf7-not-valid-tip {
+		font-size: .9em;
+		margin: -5px 0 10px;
+		color: #fff;
+		border: 2px dashed $c-red;
+		-webkit-animation-duration: 1s; 
+		animation-duration: 1s; 
+		-webkit-animation-fill-mode: both; 
+		animation-fill-mode: both;
+		-webkit-animation-name: tada; 
+		animation-name: tada; 
+		text-align: center;
+		text-shadow: 1px 1px 0 #0A0A0A;
+	}
+	.wpcf7-response-output {
+		color: #fff;
+		text-align: center;
+		border: none;
+	}
+	.wpcf7-validation-errors {
+		background-color: $c-orange;
+	}
+	.wpcf7-mail-sent-ok {
+		background-color: $c-green;
+	}
 }
 
 

@@ -25,17 +25,16 @@ $(document).ready(function() {
 		var mn = $(".main-header-top");
 			mns = "main-nav-scrolled";
 			mh = $('.main-header'),
-			hdr = $('.main-header').height() - menuOffSet;
+			hdr = $('.main-header').height() - menuOffSet -2;
 
 		$(window).scroll(function() {
-			if( $(this).scrollTop() > hdr ) {
+			if( $(this).scrollTop() >= hdr ) {
 				mh.css('padding-top', '88px');
 				mn.addClass(mns);
 			} else {
 				mh.css('padding-top', '0');
 				mn.removeClass(mns);
 			}
-
 		});
 
 	}
@@ -87,9 +86,18 @@ $(document).ready(function() {
 	}
 
 	$('.main-nav a:not(.langue-nav a)').on('click',function(e){
+		var offsetContact = 50;
 		e.preventDefault();
 		$(this).closest('.active-mobile-menu').removeClass('active-mobile-menu');
-		$('html,body').stop().animate({scrollTop: getRelatedContent(this).offset().top - menuOffSet});
+		if (getRelatedContent(this).hasClass('contacts')) {
+			$('html,body')
+			  .stop()
+			   .animate({scrollTop: getRelatedContent(this).offset().top - menuOffSet + offsetContact});
+		} else {
+			$('html,body')
+			  .stop()
+			   .animate({scrollTop: getRelatedContent(this).offset().top - menuOffSet});
+		}
 	});
 
 	// $('.js-open-threed-model').magnificPopup({
