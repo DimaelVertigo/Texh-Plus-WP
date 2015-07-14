@@ -87,6 +87,9 @@ body {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	&-training {
+		overflow: hidden;
+	}
 }
 
 .row:after {
@@ -371,7 +374,7 @@ body {
 	.lang-fr {
 		@include retina-sprite(flag-fr);
 	}
-	.lang-eng {
+	.lang-en {
 		@include retina-sprite(flag-eng);
 	}
 	.lang-de {
@@ -379,6 +382,9 @@ body {
 	}
 	.lang-it {
 		@include retina-sprite(flag-it);
+	}
+	.lang-es {
+		@include retina-sprite(flag-sp);
 	}
 	.sub-menu {
 		min-width: 0;
@@ -985,6 +991,7 @@ body {
 	position: absolute;
 	left: 0; right: 0; top: 0; bottom: 0;
 	width: 100%; height: 100%;
+	border-top: 3px solid $c-orange;
 }
 
 // .mfp-content {
@@ -1398,6 +1405,44 @@ body {
 	}
 	.btn {
 		display: block;
+	}
+	.captcha-img {
+		margin: -10px 0 5px;
+		float: right;
+		position: relative;
+		top: 39px;
+		z-index: 2;
+		right: 18px;
+	}
+	.wpcf7-not-valid-tip {
+		font-size: .9em;
+		margin: -5px 0 10px;
+		color: #fff;
+		border: 2px dashed $c-red;
+		-webkit-animation-duration: 1s; 
+		animation-duration: 1s; 
+		-webkit-animation-fill-mode: both; 
+		animation-fill-mode: both;
+		-webkit-animation-name: tada; 
+		animation-name: tada; 
+		text-align: center;
+		text-shadow: 1px 1px 0 #0A0A0A;
+	}
+	.wpcf7-response-output {
+		color: #fff;
+		text-align: center;
+		border: none;
+	}
+	.wpcf7-validation-errors {
+		background-color: $c-orange;
+	}
+	.wpcf7-mail-sent-ok {
+		background-color: $c-green;
+	}
+	input:not(.btn), textarea {
+		&:focus {
+			background-color: rgba(255,255,255,1);
+		}
 	}
 }
 
