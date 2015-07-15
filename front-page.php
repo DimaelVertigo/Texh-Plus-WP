@@ -543,6 +543,8 @@ get_header(); ?>
 					</div>
 					<div class="m-box-4">
 						<p><?php the_field('cables-description2') ?></p>
+						<p><?php the_field('cables-description3') ?></p>
+						<p><?php the_field('cables-description4') ?></p>
 					</div>
 					<div class="m-box-4">
 
@@ -791,7 +793,7 @@ get_header(); ?>
 						<p><?php the_field('training-simple-paragraph4') ?></p>
 					</div>
 					<div class="m-box-6">
-						<img src="<?php the_field('training') ?>" alt="">
+						<img src="<?php the_field('training-img') ?>" alt="">
 					</div>
 				</div>
 			</div>
