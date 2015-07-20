@@ -526,51 +526,68 @@ get_header(); ?>
 				</div>
 				<div class="row">
 					<div class="m-box-4">
-						<p><strong><?php the_field('cables-list-title') ?></strong></p>
+						<!-- 1 -->
+						<p class="title-list"> <strong><?php the_field('cables-list-title') ?></strong>
+						</p>
 						<ul class="def-list">
 							<?php 
 							    if( have_rows('cables-list') ):
 							        while ( have_rows('cables-list') ) : the_row();
-							            ?>
-							        <li> 
-							        	<?php the_sub_field('cables-list-item'); ?>
-							        </li>
-							        <?php endwhile;
+							            ?>				
+							<li>
+								<?php the_sub_field('cables-list-item'); ?></li>
+							<?php endwhile;
+							    else :
+							    endif; 
+							?></ul>
+					</div>
+					<div class="m-box-4">
+						<!-- 2 -->
+						<p class="simple-parag">
+							<?php the_field('cables-description2') ?></p>
+						<!-- 3 -->
+						<p>
+							<?php the_field('cables-list-title2') ?></p>
+						<ul class="def-list">
+							<?php 
+							    if( have_rows('cables-list2') ):
+							        while ( have_rows('cables-list2') ) : the_row();
+							            ?>				
+							<li>
+								<?php the_sub_field('cables-list-item'); ?></li>
+							<?php endwhile;
 							    else :
 							    endif; 
 							?>
 						</ul>
 					</div>
 					<div class="m-box-4">
-						<p><?php the_field('cables-description2') ?></p>
-						<p><?php the_field('cables-description3') ?></p>
-						<p><?php the_field('cables-description4') ?></p>
-					</div>
-					<div class="m-box-4">
-
+						<!-- 4 -->
+						<p class="simple-parag">
+							<?php the_field('cables-description4') ?></p>
+						<p class="simple-parag">
+							<?php the_field('cables-description5') ?></p>
 						<div class="small-gallery">
-							
+
 							<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
 								<?php 
 								    if( have_rows('cables_gallery_images') ):
 								        while ( have_rows('cables_gallery_images') ) : the_row();
-								            ?>
-								            <li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-								            	<a href="<?php the_sub_field('fullsize'); ?>
-								            		" itemprop="contentUrl" data-size="1024x605" data-index="0">
-								            		<img src="<?php the_sub_field('mini'); ?>" itemprop="thumbnail" alt="">
-							            		</a>
-								            </li>
-								        <?php endwhile;
+								            ?>					
+								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a href="<?php the_sub_field('fullsize'); ?>
+										" itemprop="contentUrl" data-size="1024x605" data-index="0">
+										<img src="<?php the_sub_field('mini'); ?>" itemprop="thumbnail" alt=""></a>
+								</li>
+								<?php endwhile;
 								    else :
 								    endif; 
 								?>
 							</ul>
-
 						</div>
-
 					</div>
 				</div>
+
 			</div>
 		</div>
 
@@ -854,6 +871,16 @@ get_header(); ?>
 						<div class="box-6">
 							<div class="contact-form">
 								<?php echo do_shortcode("[contact-form-7 id=6 title=Contact form 1]") ?>
+								<script type="text/javascript">
+								      var onloadCallback = function() {
+								        grecaptcha.render('g-recaptcha', {
+								          'sitekey' : '6LcjCQoTAAAAAHsxgnSINm-yz_1rJUyBpmYtBgTh',
+								          'type': 'audio'
+								        });
+								      };
+								    </script>
+								<div id="g-recaptcha" style="width=207px; height=44px"></div>
+								
 							</div>
 						</div>
 					</div>

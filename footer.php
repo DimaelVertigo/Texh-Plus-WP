@@ -11,8 +11,9 @@
 
 	<div class="footer">
 		<div class="container">
-			<p class="footer-desc"><?php the_field('footer-description') ?>
-			<a href="http://heartbeat.ua" target="_blank"><?php the_field('hb-link-text') ?></a></p>
+			<p class="footer-desc">
+				<?php the_field('footer-description') ?>
+			</p>
 		</div>
 	</div>
 
@@ -53,7 +54,9 @@
 			</div>
 		</div>
 	</div>
-
+ <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
 <?php wp_footer(); ?>
 
 </body>
