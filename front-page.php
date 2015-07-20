@@ -868,19 +868,9 @@ get_header(); ?>
 				</div>
 				<div class="container">
 					<div class="row">
-						<div class="box-6">
+						<div class="box-6 contact-form-wrap">
 							<div class="contact-form">
 								<?php echo do_shortcode("[contact-form-7 id=6 title=Contact form 1]") ?>
-								<script type="text/javascript">
-								      var onloadCallback = function() {
-								        grecaptcha.render('g-recaptcha', {
-								          'sitekey' : '6LcjCQoTAAAAAHsxgnSINm-yz_1rJUyBpmYtBgTh',
-								          'type': 'audio'
-								        });
-								      };
-								    </script>
-								<div id="g-recaptcha" style="width=207px; height=44px"></div>
-								
 							</div>
 						</div>
 					</div>
