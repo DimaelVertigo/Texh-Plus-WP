@@ -870,7 +870,24 @@ get_header(); ?>
 					<div class="row">
 						<div class="box-6 contact-form-wrap">
 							<div class="contact-form">
-								<?php echo do_shortcode("[contact-form-7 id=6 title=Contact form 1]") ?>
+								<?php if(qtrans_getLanguage() == "it") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="6" title="Contact form (it)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "fr") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="729" title="Contact form (fr)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "en") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="730" title="Contact form (en)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "de") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="731" title="Contact form (de)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "es") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="732" title="Contact form (es)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "pt") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="733" title="Contact form (pt)"]' ) ?>
+								<?php endif ?>
 							</div>
 						</div>
 					</div>

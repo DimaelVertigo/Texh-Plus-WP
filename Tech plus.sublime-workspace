@@ -24,10 +24,26 @@
 	"buffers":
 	[
 		{
+			"file": "assets/stylesheets/css/style.css",
+			"settings":
+			{
+				"buffer_size": 61130,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "sass/style.scss",
 			"settings":
 			{
-				"buffer_size": 24711,
+				"buffer_size": 24797,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/javascripts/script.js",
+			"settings":
+			{
+				"buffer_size": 7444,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +51,7 @@
 			"file": "front-page.php",
 			"settings":
 			{
-				"buffer_size": 28632,
+				"buffer_size": 29634,
 				"line_ending": "Unix"
 			}
 		}
@@ -47,7 +63,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 387.0,
+		"height": 392.0,
 		"last_filter": "moni",
 		"selected_items":
 		[
@@ -56,16 +72,32 @@
 				"SFTP: Monitor File (Upload on External Save)"
 			],
 			[
-				"expa",
-				"Format CSS: Expanded"
+				"mo",
+				"SFTP: Monitor File (Upload on External Save)"
 			],
 			[
-				"snippet col",
-				"Snippet: css-color"
+				"html",
+				"Set Syntax: HTML"
 			],
 			[
 				"ins",
 				"Package Control: Install Package"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"expa",
+				"Format CSS: Expanded"
+			],
+			[
+				"hy",
+				"Hyperlink Helper: Link to Wikipedia Page for Selection"
+			],
+			[
+				"snippet col",
+				"Snippet: css-color"
 			],
 			[
 				"less",
@@ -100,15 +132,25 @@
 		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus",
 		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/assets",
 		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/assets/javascripts",
-		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/sass"
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/assets/stylesheets",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/assets/stylesheets/css",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/sass",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/sass/base",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/sass/UI"
 	],
 	"file_history":
 	[
-		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/footer.php",
-		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/front-page.php",
-		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/assets/stylesheets/css/style.css",
-		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/functions.php",
 		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/header.php",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/assets/javascripts/script.js",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/footer.php",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/functions.php",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/plugins/contact-form-7/admin/css/styles.css",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/plugins/contact-form-7/admin/css/styles-rtl.css",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/plugins/contact-form-7/includes/css/styles.css",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/plugins/contact-form-7/includes/css/styles-rtl.css",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/style.css",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/assets/stylesheets/css/style.css",
+		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/front-page.php",
 		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/.htaccess",
 		"/Users/user/Library/Caches/Cleanup At Startup/Transmit/A84C6A56-E3A0-4131-9A38-1905AD1AB895/.htaccess",
 		"/Users/user/Library/Caches/Cleanup At Startup/Transmit/CE1FA418-E0BF-424F-A55E-A005BFB29E20/.htaccess",
@@ -117,7 +159,6 @@
 		"/Users/user/Library/Caches/Cleanup At Startup/Transmit/362EDE14-02B3-46BC-A9F9-8C90143080BB/.htaccess",
 		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/assets/javascripts/scripts-min.js",
 		"/Users/user/Desktop/style.scss",
-		"/Applications/MAMP/htdocs/wordpress.local/tech_plus/wp-content/themes/tech-plus/style.css",
 		"/Users/user/Desktop/tech-plus-layout/sass/style.scss",
 		"/Applications/MAMP/htdocs/wordpress.local/Vost/wp-content/themes/vost/less/content-block-5.less",
 		"/Applications/MAMP/htdocs/wordpress.local/Vost/wp-content/themes/vost/header.php",
@@ -209,6 +250,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fsg-item",
+			"animals",
+			"fsg-item",
+			"req",
+			"input",
+			"form",
+			"wpcf7-form-control",
+			"contact-form",
+			"cables",
+			"contact-form",
+			"rc-anchor-content",
+			"styles_",
+			"style_",
+			"style",
+			" !important",
+			"g-recaptcha-",
+			"contact-form",
+			"widgetId1",
+			"example1",
+			"contact-form",
+			"contact",
+			".full-size-gallery",
+			"medic",
+			"compa",
+			"fluid",
+			"simple-paragraph",
+			"cables",
+			"15",
+			"animals",
+			"fluids",
+			"servi",
 			"cables",
 			".full-size-gallery",
 			"image",
@@ -301,11 +373,45 @@
 			[
 				{
 					"buffer": 0,
+					"file": "assets/stylesheets/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 61130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60915,
+								60932
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "css",
+							"buffer_scroll_name": "56ed913d",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"spell_check": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 9358.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
 					"file": "sass/style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24711,
+						"buffer_size": 24797,
 						"regions":
 						{
 							"bookmarks":
@@ -321,8 +427,8 @@
 						"selection":
 						[
 							[
-								11502,
-								11502
+								12433,
+								12433
 							]
 						],
 						"settings":
@@ -337,27 +443,62 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 12109.0,
+						"translation.y": 12860.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "front-page.php",
+					"buffer": 2,
+					"file": "assets/javascripts/script.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 28632,
+						"buffer_size": 7444,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18828,
-								18828
+								4808,
+								4808
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "e866c83e",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"spell_check": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2823.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "front-page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28247,
+								28247
 							]
 						],
 						"settings":
@@ -373,10 +514,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9806.0,
+						"translation.y": 15673.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -439,32 +580,36 @@
 		"selected_items":
 		[
 			[
-				"f",
-				"front-page.php"
-			],
-			[
-				"fro",
-				"front-page.php"
-			],
-			[
-				"hea",
-				"header.php"
-			],
-			[
 				"sc",
-				"assets/javascripts/scripts-min.js"
+				"assets/javascripts/script.js"
+			],
+			[
+				"f",
+				"footer.php"
 			],
 			[
 				"fu",
 				"functions.php"
 			],
 			[
-				"styl",
-				"style.css"
+				"hea",
+				"header.php"
 			],
 			[
 				"sty",
-				"sass/style.scss"
+				"style.css"
+			],
+			[
+				"fo",
+				"footer.php"
+			],
+			[
+				"fro",
+				"front-page.php"
+			],
+			[
+				"styl",
+				"style.css"
 			],
 			[
 				"5",
@@ -605,7 +750,7 @@
 		[
 			[
 				"",
-				"/Applications/MAMP/htdocs/wordpress.local/Vost/wp-content/themes/vost/Vost.sublime-project"
+				"/Applications/MAMP/htdocs/wordpress.local/Ent/wp-content/themes/ENT-Sinus-Center-WP/Ent.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -626,7 +771,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 178.0,
 	"status_bar_visible": true,
 	"template_settings":

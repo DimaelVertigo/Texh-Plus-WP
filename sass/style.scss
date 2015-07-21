@@ -749,7 +749,7 @@ body {
 .vertical-gallery {
 	.fsg-item {
 		display: inline-block;
-		border: 1px solid $c-border;
+		border: 2px solid $c-orange;
 		&:hover {
 			img {
 				opacity: 0.7;
@@ -1416,14 +1416,6 @@ body {
 		display: inline-block;
 		margin-top: 20px;
 	}
-	// .captcha-img {
-	// 	margin: -10px 0 5px;
-	// 	float: right;
-	// 	position: relative;
-	// 	top: 39px;
-	// 	z-index: 2;
-	// 	right: 18px;
-	// }
 	.wpcf7-not-valid-tip {
 		font-size: .9em;
 		margin: -2px 0 10px;
@@ -1454,7 +1446,15 @@ body {
 			background-color: rgba(255,255,255,1);
 		}
 	}
+	.wpcf7-submit[disabled="disabled"] {
+		color: red;
+	}
 
+}
+.inp-highlight {
+	&::after {
+	    background-color: $c-green;
+	}
 }
 //////////////////////////////////////////
 //                                      //
@@ -1470,7 +1470,7 @@ body {
 		color: $c-text;
 		text-decoration: none;
 		font-family: $f-pn-semib;
-		&:hover {
+		&::before {
 			color: $c-orange;
 		}
 	}

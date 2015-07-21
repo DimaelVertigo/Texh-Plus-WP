@@ -224,6 +224,18 @@ $(document).ready(function() {
 
 	changeLang();
 	
+	// Form Highlight
+	var formHighlight = $('.wpcf7-form');
+
+	formHighlight.on('blur', 'textarea, input:not(.novalid)', function() {
+		var _this = $(this);
+			val = _this.val();
+		if ( val.length ) {
+			_this.parent().parent().addClass('inp-highlight');
+		} else {
+			_this.parent().parent().removeClass('inp-highlight');
+		}
+	});
 
 	
 
