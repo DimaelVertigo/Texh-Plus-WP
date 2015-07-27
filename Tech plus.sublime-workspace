@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"on",
+				"on"
+			],
+			[
 				"min",
 				"min-width"
 			],
@@ -27,7 +39,7 @@
 			"file": "assets/stylesheets/css/style.css",
 			"settings":
 			{
-				"buffer_size": 61130,
+				"buffer_size": 61161,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +47,7 @@
 			"file": "sass/style.scss",
 			"settings":
 			{
-				"buffer_size": 24797,
+				"buffer_size": 24867,
 				"line_ending": "Unix"
 			}
 		},
@@ -43,7 +55,7 @@
 			"file": "assets/javascripts/script.js",
 			"settings":
 			{
-				"buffer_size": 7444,
+				"buffer_size": 6637,
 				"line_ending": "Unix"
 			}
 		},
@@ -250,6 +262,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"1024x605",
+			"small-gallery",
+			"company",
+			".parent()",
+			"inp-required",
+			"inp-highlight",
+			"lighten",
+			"inp-highlight",
+			"contact-for",
 			"fsg-item",
 			"animals",
 			"fsg-item",
@@ -368,7 +389,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -377,15 +398,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 61130,
+						"buffer_size": 61161,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								60915,
-								60932
+								60963,
+								60976
 							]
 						],
 						"settings":
@@ -399,10 +420,10 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 9358.0,
+						"translation.y": 13012.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -411,7 +432,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24797,
+						"buffer_size": 24867,
 						"regions":
 						{
 							"bookmarks":
@@ -420,6 +441,10 @@
 								"icon": "bookmark",
 								"regions":
 								[
+									[
+										24394,
+										24394
+									]
 								],
 								"scope": "bookmarks"
 							}
@@ -427,8 +452,8 @@
 						"selection":
 						[
 							[
-								12433,
-								12433
+								11867,
+								11867
 							]
 						],
 						"settings":
@@ -443,10 +468,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 12860.0,
+						"translation.y": 12337.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -455,15 +480,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7444,
+						"buffer_size": 6637,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4808,
-								4808
+								6297,
+								6297
 							]
 						],
 						"settings":
@@ -478,10 +503,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2823.0,
+						"translation.y": 3490.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -497,8 +522,8 @@
 						"selection":
 						[
 							[
-								28247,
-								28247
+								7848,
+								7848
 							]
 						],
 						"settings":
@@ -514,10 +539,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 15673.0,
+						"translation.y": 4579.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -750,7 +775,7 @@
 		[
 			[
 				"",
-				"/Applications/MAMP/htdocs/wordpress.local/Ent/wp-content/themes/ENT-Sinus-Center-WP/Ent.sublime-project"
+				"~/Desktop/Actual markup template/Actual default template.sublime-project"
 			]
 		],
 		"width": 380.0
