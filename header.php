@@ -17,10 +17,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, maximum-scale=1.0 user-scalable=yes">
 <title><?php the_field('site-title') ?></title>
-<link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url') ?>/favicon.ico">
+<link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url') ?>/favicon-16x16.ico">
+<link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url') ?>/favicon-32x32.ico">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

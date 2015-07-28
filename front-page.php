@@ -653,34 +653,57 @@ get_header(); ?>
 			<div class="container">
 				<div class="h2-header">
 					<div class="left-side">
-						<h2><?php the_field('fluids-title') ?></h2>
+						<h2>
+							<?php the_field('fluids-title') ?></h2>
 					</div>
 					<div class="right-side orange-line">
-						<p><?php the_field('fluids-description') ?></p>
+						<p>
+							<?php the_field('fluids-description') ?></p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="m-box-6">
-						<p class="simple-parag"><?php the_field('fluids-simple-paragraph1') ?></p>
-						<p><?php the_field('fluids-simple-paragraph2') ?></p>
+					<div class="m-box-4">
+						<p class="simple-parag">
+							<?php the_field('fluids-simple-paragraph1') ?></p>
+						<p>
+							<?php the_field('fluids-simple-paragraph2') ?></p>
 					</div>
-					<div class="m-box-6">
-						<p class="title-list"><strong><?php the_field('fluids-list-title') ?></strong></p>
+					<div class="m-box-4">
+						<p class="title-list"> <strong><?php the_field('fluids-list-title') ?></strong>
+						</p>
 						<ul class="def-list">
 							<?php 
 							    if( have_rows('fluids-list') ):
 							        while ( have_rows('fluids-list') ) : the_row();
-							            ?>
-							        <li> 
-							        	<?php the_sub_field('fluids-list-item'); ?>
-							        </li>
-							        <?php endwhile;
+							            ?>		
+							<li>
+								<?php the_sub_field('fluids-list-item'); ?></li>
+							<?php endwhile;
 							    else :
 							    endif; 
-							?>
-						</ul>
+							?></ul>
+					</div>
+					<div class="m-box-4">
+						<div class="small-gallery">
+							<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
+								<?php 
+							    if( have_rows('fluids_gallery_images') ):
+							        while ( have_rows('fluids_gallery_images') ) : the_row();
+							            ?>		
+								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a href="<?php the_sub_field('fullsize'); ?>
+										" itemprop="contentUrl" data-size="1024x605" data-index="0">
+										<img src="<?php the_sub_field('mini'); ?>" itemprop="thumbnail" alt=""></a>
+								</li>
+								<?php endwhile;
+								    else :
+								    endif; 
+								?>
+							</ul>
+						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 
