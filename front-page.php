@@ -817,6 +817,7 @@ get_header(); ?>
 					</div>
 					<div class="m-box-6">
 						<img src="<?php the_field('training-img') ?>" alt="">
+<<<<<<< HEAD
 					</div>
 				</div>
 			</div>
@@ -842,6 +843,8 @@ get_header(); ?>
 					<h4><span class="tw-color">Twitter</span> stream</h4>
 					<?php get_sidebar( 'twitter-sidebar'); ?>
 						<img class="tw-logo" src="<?php bloginfo('template_url') ?>/assets/images/bg-tw.png" alt="">
+=======
+>>>>>>> f117fe679672d6595e7c3e324774a00f7be82033
 					</div>
 				</div>
 
