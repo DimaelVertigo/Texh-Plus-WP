@@ -23,12 +23,13 @@ $(document).ready(function() {
 
 	if ( !$isTouch ) {
 		var mn = $(".main-header-top");
+			mnbottom = $(".main-header-bottom");
 			mns = "main-nav-scrolled";
 			mh = $('.main-header'),
-			hdr = $('.main-header').height() - menuOffSet;
+			hdr = $('.main-header').height() - menuOffSet -2;
 
 		$(window).scroll(function() {
-			if( $(this).scrollTop() > hdr ) {
+			if( $(this).scrollTop() >= hdr ) {
 				mh.css('padding-top', '88px');
 				mn.addClass(mns);
 			} else {
@@ -40,7 +41,7 @@ $(document).ready(function() {
 	}
 
 	setTimeout(function() {
-		$('.main-header').addClass('anim-bg');
+		mnbottom.addClass('anim-bg');
 		sliderList.each(function(index, el) {
 			$(el).addClass('anim-item');
 		});
@@ -74,6 +75,15 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.js-blog-langue-nav').on({
+		mouseenter: function() {
+			$(this).children('.sub-menu').addClass('active-sub-menu');
+		},
+		mouseleave: function() {
+			$(this).children('.sub-menu').removeClass('active-sub-menu');
+		}
+	});
+
 	$('.slider-services').owlCarousel({
 		items: 1,
 		autoHeight : true,
@@ -86,9 +96,18 @@ $(document).ready(function() {
 	}
 
 	$('.main-nav a:not(.langue-nav a)').on('click',function(e){
+		var offsetContact = 50;
 		e.preventDefault();
 		$(this).closest('.active-mobile-menu').removeClass('active-mobile-menu');
-		$('html,body').stop().animate({scrollTop: getRelatedContent(this).offset().top - menuOffSet});
+		if (getRelatedContent(this).hasClass('contacts')) {
+			$('html,body')
+			  .stop()
+			   .animate({scrollTop: getRelatedContent(this).offset().top - menuOffSet + offsetContact});
+		} else {
+			$('html,body')
+			  .stop()
+			   .animate({scrollTop: getRelatedContent(this).offset().top - menuOffSet});
+		}
 	});
 
 	// $('.js-open-threed-model').magnificPopup({
@@ -138,13 +157,13 @@ $(document).ready(function() {
 	function helloGoogleMap() {
 		$(function() {
 			var map, myLatLng;
-				image = new google.maps.MarkerImage("assets/images/map-point.png", null, null, null, new google.maps.Size(41,73));
+				image = new google.maps.MarkerImage("/wp-content/themes/tech-plus/assets/images/map-point.png", null, null, null, new google.maps.Size(41,73));
 
 			function initMap() {
 				myLatLng = new google.maps.LatLng(43.146916, 5.763518);
 				var mapOptions = {
-				  center: latLngOffSet(myLatLng, 15, 400, 130),
-				  zoom: 15,
+				  center: latLngOffSet(myLatLng, 14, 400, 130),
+				  zoom: 14,
 				  scrollwheel: false,
 				  mapTypeId: google.maps.MapTypeId.ROADMAP,
 				  mapTypeControl: true,
@@ -198,5 +217,36 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	function changeLang() {
+		var langNav = $('.langue-nav'),
+			selectedLang = langNav.find('#icon-lang');
+			listLang = langNav.children('.sub-menu').find('[class *= "lang-"]');
+			lang = document.location.href.match(/\?(lang=..)/)[1].replace('=', '-');
+
+		selectedLang.addClass(lang);
+		listLang.each(function(index, el) {
+			if ($(this).hasClass(lang)) {
+				$(this).closest('.level-two').remove();
+			}
+		});
+	}
+
+	changeLang();
+	
+	// Form Highlight
+	var formHighlight = $('.wpcf7-form');
+
+	formHighlight.on('blur', 'textarea, input:not(.novalid)', function() {
+		var _this = $(this);
+			val = _this.val();
+		if ( val.length ) {
+			_this.parent().parent().addClass('inp-highlight');
+		} else {
+			_this.parent().parent().removeClass('inp-highlight');
+		}
+	});
+
+	
 
 });

@@ -12,13 +12,20 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Tech-plus.fr">
+<meta name="Indentifier-URL" content="http://tech-plus.fr">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0 user-scalable=yes">
+<title><?php the_field('site-title') ?></title>
+<link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url') ?>/favicon-16x16.ico">
+<link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url') ?>/favicon-32x32.ico">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 
+	<?php if (is_front_page()){?>
 	<div class="main-header">
 		<div class="main-header-top">
 			<div class="container clearfix">
@@ -58,35 +65,37 @@
 						<a href="#fluids"><?php the_field('main-nav_level-one_link_3') ?></a>
 					</li>
 					<li class="level-one">
-						<a href="#services"><?php the_field('main-nav_level-one_link_4') ?></a>
+						<a href="#training"><?php the_field('main-nav_level-one_link_4') ?></a>
 					</li>
+					<li class="level-one"><a href="#blog">Blog</a></li>
 					<li class="level-one langue-nav">
-						<span class="btn-sub-menu"> <i class="lang-fr"></i>
+						<span class="btn-sub-menu">
+							<i id="icon-lang" class="lang-fr"></i>
 							<i class="menu-arr"></i>
 						</span>
 						<ul class="sub-menu">
 							<li class="level-two">
-								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=en">
-									<i class="lang-eng"></i>
+								<a href="/?lang=en">
+									<i class="lang-en"></i>
 								</a>
 							</li>
 							<li class="level-two">
-								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=de">
+								<a href="/?lang=de">
 									<i class="lang-de"></i>
 								</a>
 							</li>
 							<li class="level-two">
-								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=it">
+								<a href="/?lang=it">
 									<i class="lang-it"></i>
 								</a>
 							</li>
 							<li class="level-two">
-								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=es">
+								<a href="/?lang=es">
 									<i class="lang-es"></i>
 								</a>
 							</li>
 							<li class="level-two">
-								<a href="http://localhost:8888/wordpress.local/tech_plus/?lang=fr">
+								<a href="/?lang=fr">
 									<i class="lang-fr"></i>
 								</a>
 							</li>
@@ -123,4 +132,52 @@
 				</div>
 			</div>
 		</div>
+	</div>	
+	
+	<?php } else {?>
+
+	<div class="blog-header">
+		<div class="container clearfix">
+			<h1 class="main-logo">
+				<a href="<?php echo home_url(); ?>">
+					Tech Plus | Le spécialiste en hyperbarie et fluides médicaux
+					<img src="<?php bloginfo('template_url') ?>/assets/images/m-logo-2x.png" alt="">
+				</a>
+			</h1>
+			<a class="go-home-page" href="<?php echo home_url(); ?>">Go to home page</a>
+			<div class="langue-nav js-blog-langue-nav">
+				<span class="btn-sub-menu"><i class="lang-fr"></i><i class="menu-arr"></i></span>
+				<ul class="sub-menu">
+					<li class="level-two">
+						<a href="/?lang=en">
+							<i class="lang-en"></i>
+						</a>
+					</li>
+					<li class="level-two">
+						<a href="/?lang=de">
+							<i class="lang-de"></i>
+						</a>
+					</li>
+					<li class="level-two">
+						<a href="/?lang=it">
+							<i class="lang-it"></i>
+						</a>
+					</li>
+					<li class="level-two">
+						<a href="/?lang=es">
+							<i class="lang-es"></i>
+						</a>
+					</li>
+					<li class="level-two">
+						<a href="/?lang=fr">
+							<i class="lang-fr"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
+
+	<?php } ?>
+
+	

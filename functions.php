@@ -105,9 +105,16 @@ function tech_plus_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar(array(
+	    'name' => 'Twitter sidebar',
+	    'before_widget' => '',
+	    'after_widget' => '',
+	    'before_title' => '<div class="title">',
+	    'after_title' => '</div>',
+	));
 }
 add_action( 'widgets_init', 'tech_plus_widgets_init' );
-
+  
 /**
  * Enqueue scripts and styles.
  */

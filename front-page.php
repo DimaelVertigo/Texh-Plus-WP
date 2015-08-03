@@ -87,28 +87,21 @@ get_header(); ?>
 			<div class="full-size-gallery">
 
 				<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="0">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-1.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-2.jpg" itemprop="contentUrl" data-size="1024x605" data-index="1">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-2.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-3.jpg" itemprop="contentUrl" data-size="1024x605" data-index="2">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-3.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-4.jpg" itemprop="contentUrl" data-size="1024x605" data-index="3">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-4.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
+					<?php 
+					    if( have_rows('gallery_1_images') ):
+					        while ( have_rows('gallery_1_images') ) : the_row();
+					            ?>
+					            <li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					            	<a href="<?php the_sub_field('img-fullsize'); ?>
+					            		" itemprop="contentUrl" data-size="1024x605" data-index="0">
+					            		<img src="<?php the_sub_field('img-mini'); ?>" itemprop="thumbnail" alt="">
+				            		</a>
+					            </li>
+					        <?php endwhile;
+					    else :
+					    endif; 
+					?>
 				</ul>
-
 			</div>
 		</div>
 
@@ -192,6 +185,7 @@ get_header(); ?>
 						<span class="info-text"><?php the_field('threed-model') ?></span>
 					</h3>
 					<!-- 3d model here -->
+					<p class="three-d-text">3D model</p>
 				</div>
 			</div>
 		</div>
@@ -244,30 +238,22 @@ get_header(); ?>
 			</div>
 			
 			<div class="full-size-gallery">
-
 				<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-5.jpg" itemprop="contentUrl" data-size="1024x605" data-index="0">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-5.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="1">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-6.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-5.jpg" itemprop="contentUrl" data-size="1024x605" data-index="2">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-7.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="3">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-8.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
+					<?php 
+					    if( have_rows('gallery_2_images') ):
+					        while ( have_rows('gallery_2_images') ) : the_row();
+					            ?>
+					            <li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					            	<a href="<?php the_sub_field('img-fullsize'); ?>
+					            		" itemprop="contentUrl" data-size="1024x605" data-index="0">
+					            		<img src="<?php the_sub_field('img-mini'); ?>" itemprop="thumbnail" alt="">
+				            		</a>
+					            </li>
+					        <?php endwhile;
+					    else :
+					    endif; 
+					?>
 				</ul>
-
 			</div>
 
 		</div>
@@ -309,26 +295,20 @@ get_header(); ?>
 			<div class="full-size-gallery">
 				
 				<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-5.jpg" itemprop="contentUrl" data-size="1024x605" data-index="0">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-9.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="1">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-10.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-5.jpg" itemprop="contentUrl" data-size="1024x605" data-index="2">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-4.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="3">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-6.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
+					<?php 
+					    if( have_rows('gallery_3_images') ):
+					        while ( have_rows('gallery_3_images') ) : the_row();
+					            ?>
+					            <li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					            	<a href="<?php the_sub_field('img-fullsize'); ?>
+					            		" itemprop="contentUrl" data-size="1024x605" data-index="0">
+					            		<img src="<?php the_sub_field('img-mini'); ?>" itemprop="thumbnail" alt="">
+				            		</a>
+					            </li>
+					        <?php endwhile;
+					    else :
+					    endif; 
+					?>
 				</ul>
 
 			</div>
@@ -466,26 +446,20 @@ get_header(); ?>
 			<div class="full-size-gallery">
 				
 				<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="0">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-11.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-2.jpg" itemprop="contentUrl" data-size="1024x605" data-index="1">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-12.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-3.jpg" itemprop="contentUrl" data-size="1024x605" data-index="2">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-7.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-4.jpg" itemprop="contentUrl" data-size="1024x605" data-index="3">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-1.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
+					<?php 
+					    if( have_rows('gallery_4_images') ):
+					        while ( have_rows('gallery_4_images') ) : the_row();
+					            ?>
+					            <li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					            	<a href="<?php the_sub_field('img-fullsize'); ?>
+					            		" itemprop="contentUrl" data-size="1024x605" data-index="0">
+					            		<img src="<?php the_sub_field('img-mini'); ?>" itemprop="thumbnail" alt="">
+				            		</a>
+					            </li>
+					        <?php endwhile;
+					    else :
+					    endif; 
+					?>
 				</ul>
 
 			</div>
@@ -520,26 +494,20 @@ get_header(); ?>
 			<div class="full-size-gallery">
 				
 				<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="0">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-13.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-2.jpg" itemprop="contentUrl" data-size="1024x605" data-index="1">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-14.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-3.jpg" itemprop="contentUrl" data-size="1024x605" data-index="2">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-15.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
-					<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="<?php bloginfo('template_url') ?>/tmp/item-4.jpg" itemprop="contentUrl" data-size="1024x605" data-index="3">
-							<img src="<?php bloginfo('template_url') ?>/tmp/small-image-16.jpg" itemprop="thumbnail" alt="">
-						</a>
-					</li>
+					<?php 
+					    if( have_rows('gallery_5_images') ):
+					        while ( have_rows('gallery_5_images') ) : the_row();
+					            ?>
+					            <li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					            	<a href="<?php the_sub_field('img-fullsize'); ?>
+					            		" itemprop="contentUrl" data-size="1024x605" data-index="0">
+					            		<img src="<?php the_sub_field('img-mini'); ?>" itemprop="thumbnail" alt="">
+				            		</a>
+					            </li>
+					        <?php endwhile;
+					    else :
+					    endif; 
+					?>
 				</ul>
 
 			</div>
@@ -559,50 +527,68 @@ get_header(); ?>
 				</div>
 				<div class="row">
 					<div class="m-box-4">
-						<p><strong><?php the_field('cables-list-title') ?></strong></p>
+						<!-- 1 -->
+						<p class="title-list"> <strong><?php the_field('cables-list-title') ?></strong>
+						</p>
 						<ul class="def-list">
 							<?php 
 							    if( have_rows('cables-list') ):
 							        while ( have_rows('cables-list') ) : the_row();
-							            ?>
-							        <li> 
-							        	<?php the_sub_field('cables-list-item'); ?>
-							        </li>
-							        <?php endwhile;
+							            ?>				
+							<li>
+								<?php the_sub_field('cables-list-item'); ?></li>
+							<?php endwhile;
+							    else :
+							    endif; 
+							?></ul>
+					</div>
+					<div class="m-box-4">
+						<!-- 2 -->
+						<p class="simple-parag">
+							<?php the_field('cables-description2') ?></p>
+						<!-- 3 -->
+						<p>
+							<?php the_field('cables-list-title2') ?></p>
+						<ul class="def-list">
+							<?php 
+							    if( have_rows('cables-list2') ):
+							        while ( have_rows('cables-list2') ) : the_row();
+							            ?>				
+							<li>
+								<?php the_sub_field('cables-list-item'); ?></li>
+							<?php endwhile;
 							    else :
 							    endif; 
 							?>
 						</ul>
 					</div>
 					<div class="m-box-4">
-						<p><?php the_field('cables-description2') ?></p>
-					</div>
-					<div class="m-box-4">
-
+						<!-- 4 -->
+						<p class="simple-parag">
+							<?php the_field('cables-description4') ?></p>
+						<p class="simple-parag">
+							<?php the_field('cables-description5') ?></p>
 						<div class="small-gallery">
-							
+
 							<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
+								<?php 
+								    if( have_rows('cables_gallery_images') ):
+								        while ( have_rows('cables_gallery_images') ) : the_row();
+								            ?>					
 								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="0">
-										<img src="<?php bloginfo('template_url') ?>/tmp/sg-thumb-1.jpg" itemprop="thumbnail" alt="">
-									</a>
+									<a href="<?php the_sub_field('fullsize'); ?>
+										" itemprop="contentUrl" data-size="1024x605" data-index="0">
+										<img src="<?php the_sub_field('mini'); ?>" itemprop="thumbnail" alt=""></a>
 								</li>
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-2.jpg" itemprop="contentUrl" data-size="1024x605" data-index="1">
-										<img src="<?php bloginfo('template_url') ?>/tmp/sg-thumb-2.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-3.jpg" itemprop="contentUrl" data-size="1024x605" data-index="2">
-										<img src="<?php bloginfo('template_url') ?>/tmp/sg-thumb-3.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
+								<?php endwhile;
+								    else :
+								    endif; 
+								?>
 							</ul>
-
 						</div>
-
 					</div>
 				</div>
+
 			</div>
 		</div>
 
@@ -641,16 +627,20 @@ get_header(); ?>
 						<div class="vertical-gallery">
 							
 							<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="0">
-										<img src="<?php bloginfo('template_url') ?>/tmp/vg-animals-thumb-1.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-2.jpg" itemprop="contentUrl" data-size="1024x605" data-index="1">
-										<img src="<?php bloginfo('template_url') ?>/tmp/vg-animals-thumb-2.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
+								<?php 
+								    if( have_rows('animals_gallery_images') ):
+								        while ( have_rows('animals_gallery_images') ) : the_row();
+								            ?>
+								            <li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								            	<a href="<?php the_sub_field('fullsize'); ?>
+								            		" itemprop="contentUrl" data-size="1024x605" data-index="0">
+								            		<img src="<?php the_sub_field('mini'); ?>" itemprop="thumbnail" alt="">
+							            		</a>
+								            </li>
+								        <?php endwhile;
+								    else :
+								    endif; 
+								?>
 							</ul>
 
 						</div>
@@ -664,34 +654,39 @@ get_header(); ?>
 			<div class="container">
 				<div class="h2-header">
 					<div class="left-side">
-						<h2><?php the_field('fluids-title') ?></h2>
+						<h2>
+							<?php the_field('fluids-title') ?></h2>
 					</div>
 					<div class="right-side orange-line">
-						<p><?php the_field('fluids-description') ?></p>
+						<p>
+							<?php the_field('fluids-description') ?></p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="m-box-6">
-						<p class="simple-parag"><?php the_field('fluids-simple-paragraph1') ?></p>
-						<p><?php the_field('fluids-simple-paragraph2') ?></p>
+						<p class="simple-parag">
+							<?php the_field('fluids-simple-paragraph1') ?></p>
+						<p>
+							<?php the_field('fluids-simple-paragraph2') ?></p>
 					</div>
 					<div class="m-box-6">
-						<p class="title-list"><strong><?php the_field('fluids-list-title') ?></strong></p>
+						<p class="title-list"> <strong><?php the_field('fluids-list-title') ?></strong>
+						</p>
 						<ul class="def-list">
 							<?php 
 							    if( have_rows('fluids-list') ):
 							        while ( have_rows('fluids-list') ) : the_row();
-							            ?>
-							        <li> 
-							        	<?php the_sub_field('fluids-list-item'); ?>
-							        </li>
-							        <?php endwhile;
+							            ?>		
+							<li>
+								<?php the_sub_field('fluids-list-item'); ?></li>
+							<?php endwhile;
 							    else :
 							    endif; 
-							?>
-						</ul>
+							?></ul>
 					</div>
+					
 				</div>
+
 			</div>
 		</div>
 
@@ -776,36 +771,20 @@ get_header(); ?>
 						<div class="small-gallery">
 							
 							<ul class="gall-picture" itemscope itemtype="http://schema.org/ImageGallery">
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-1.jpg" itemprop="contentUrl" data-size="1024x605" data-index="0">
-										<img src="<?php bloginfo('template_url') ?>/tmp/sg-thumb-1.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-2.jpg" itemprop="contentUrl" data-size="1024x605" data-index="1">
-										<img src="<?php bloginfo('template_url') ?>/tmp/sg-thumb-2.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-3.jpg" itemprop="contentUrl" data-size="1024x605" data-index="2">
-										<img src="<?php bloginfo('template_url') ?>/tmp/sg-thumb-3.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-4.jpg" itemprop="contentUrl" data-size="1024x605" data-index="3">
-										<img src="<?php bloginfo('template_url') ?>/tmp/sg-thumb-4.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-4.jpg" itemprop="contentUrl" data-size="1024x605" data-index="4">
-										<img src="<?php bloginfo('template_url') ?>/tmp/sg-thumb-5.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
-								<li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									<a href="<?php bloginfo('template_url') ?>/tmp/item-4.jpg" itemprop="contentUrl" data-size="1024x605" data-index="5">
-										<img src="<?php bloginfo('template_url') ?>/tmp/sg-thumb-6.jpg" itemprop="thumbnail" alt="">
-									</a>
-								</li>
+								<?php 
+								    if( have_rows('services_gallery_images') ):
+								        while ( have_rows('services_gallery_images') ) : the_row();
+								            ?>
+								            <li class="fsg-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								            	<a href="<?php the_sub_field('fullsize'); ?>
+								            		" itemprop="contentUrl" data-size="1024x605" data-index="0">
+								            		<img src="<?php the_sub_field('mini'); ?>" itemprop="thumbnail" alt="">
+							            		</a>
+								            </li>
+								        <?php endwhile;
+								    else :
+								    endif; 
+								?>
 							</ul>
 
 						</div>
@@ -816,7 +795,7 @@ get_header(); ?>
 		</div>
 
 		<div class="section training no-gallery-section">
-			<div class="container">
+			<div class="container container-training">
 				<div class="h2-header">
 					<div class="left-side">
 						<h2><?php the_field('training-title') ?></h2>
@@ -837,9 +816,35 @@ get_header(); ?>
 						<p><?php the_field('training-simple-paragraph4') ?></p>
 					</div>
 					<div class="m-box-6">
-
+						<img src="<?php the_field('training-img') ?>" alt="">
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="section blog no-gallery-section">
+			<div class="container">
+				<h2 class="title title-center">Blog</h2>
+				<div class="blog-content">
+					<?php query_posts('showposts=2&cat=1'); ?>
+						<?php while (have_posts()) : the_post(); ?>
+							
+								<div class="bc-thumbs blog-thumb">
+									<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail(); ?>
+										<h4><?php the_title();?></h4>
+									</a>
+								</div>
+
+						<?php endwhile; ?>
+						<?php wp_reset_query(); ?>
+					<div class="bc-thumbs twitter-thumb">
+					<h4><span class="tw-color">Twitter</span> stream</h4>
+					<?php get_sidebar( 'twitter-sidebar'); ?>
+						<img class="tw-logo" src="<?php bloginfo('template_url') ?>/assets/images/bg-tw.png" alt="">
+					</div>
+				</div>
+
 			</div>
 		</div>
 
@@ -895,9 +900,26 @@ get_header(); ?>
 				</div>
 				<div class="container">
 					<div class="row">
-						<div class="box-6">
+						<div class="box-6 contact-form-wrap">
 							<div class="contact-form">
-								<?php echo do_shortcode("[contact-form-7 id=6 title=Contact form 1]") ?>
+								<?php if(qtrans_getLanguage() == "it") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="6" title="Contact form (it)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "fr") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="729" title="Contact form (fr)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "en") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="730" title="Contact form (en)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "de") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="731" title="Contact form (de)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "es") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="732" title="Contact form (es)"]' ) ?>
+								<?php endif ?>
+								<?php if(qtrans_getLanguage() == "pt") : ?>
+								<?php echo do_shortcode( '[contact-form-7 id="733" title="Contact form (pt)"]' ) ?>
+								<?php endif ?>
 							</div>
 						</div>
 					</div>
